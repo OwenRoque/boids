@@ -4,6 +4,8 @@ Simulación de **comportamiento colectivo** inspirada en bandadas de aves, card�
 
 Implementado en **C++17**, **OpenGL 3.3 Core**, **GLFW**, **GLM** e **ImGui**.
 
+[![Video Demo](https://raw.githubusercontent.com/OwenRoque/boids/master/img/overview.png)](https://raw.githubusercontent.com/OwenRoque/boids/master/img/boids_simulation.webm)
+
 ---
 
 ## Características
