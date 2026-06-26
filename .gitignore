@@ -1,0 +1,6 @@
+build/
+_deps/
+cmake-build-*/
+*.o
+*.a
+boids_lab
