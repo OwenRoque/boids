@@ -6,9 +6,9 @@ Implementado en **C++17**, **OpenGL 3.3 Core**, **GLFW**, **GLM** e **ImGui**.
 
 ---
 
-## Requisitos del laboratorio cubiertos
+## Características
 
-| Requisito | Implementación |
+| Features | Implementación |
 |-----------|----------------|
 | Estructura Boid (posición, velocidad, dirección) | `src/Boid.h` |
 | Población ≥ 50 Boids aleatorios | Por defecto 80; ajustable 10–500 |
@@ -17,9 +17,7 @@ Implementado en **C++17**, **OpenGL 3.3 Core**, **GLFW**, **GLM** e **ImGui**.
 | Separación | Fuerza de repulsión si distancia < `separationDistance` |
 | Alineamiento | Hacia la velocidad promedio de vecinos |
 | Cohesión | Hacia el centro de masa de vecinos |
-| Ponderación de reglas | Sliders en panel ImGui |
 | Velocidad | `clampSpeed()` en cada Boid |
-| Bordes: rebote / toroidal | Selector en panel de control |
 | Parámetros en tiempo real | Panel ImGui lateral |
 
 ---
@@ -139,20 +137,6 @@ Cada `steer_*` se limita con `maxForce`. Tras integrar, la velocidad se acota en
 - Colores ligeramente distintos por índice para distinguir agentes.
 
 ---
-
-## Parámetros por defecto
-
-| Parámetro | Valor |
-|-----------|-------|
-| Boids | 80 |
-| Distancia vecindad | 80 px |
-| Distancia separación | 25 px |
-| Peso separación | 1.5 |
-| Peso alineamiento | 1.0 |
-| Peso cohesión | 1.0 |
-| Velocidad | 150 px/s |
-| Velocidad máxima | 500 px/s |
-| Bordes | Toroidal |
 
 <!--## Experimentos sugeridos
 
